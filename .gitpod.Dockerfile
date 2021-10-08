@@ -9,10 +9,9 @@ RUN wget -qO - 'https://openhab.jfrog.io/artifactory/api/gpg/key/public' | sudo 
 
 WORKDIR /tmp
 
-RUN sudo adduser --system --no-create-home --group --disabled-login openhab && \
-    wget -O openhab-download.zip https://openhab.jfrog.io/artifactory/libs-release-local/org/openhab/distro/openhab/3.1.0/openhab-3.1.0.zip && \
+RUN wget -O openhab-download.zip https://openhab.jfrog.io/artifactory/libs-release-local/org/openhab/distro/openhab/3.1.0/openhab-3.1.0.zip && \
     sudo unzip openhab-download.zip -d /opt/openhab && \
     rm openhab-download.zip && \
-    sudo chown -hR openhab:openhab /opt/openhab
+    sudo chown -hR gitpod:gitpod /opt/openhab
     # sudo su -s /bin/bash -c '/opt/openhab/start.sh' openhab
 
