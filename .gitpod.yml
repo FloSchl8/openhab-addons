@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+ - init: start openhab # runs during prebuild
+   command: sudo su -s /bin/bash -c '/opt/openhab/start.sh' openhab
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8080
+    onOpen: open-preview
