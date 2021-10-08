@@ -2,8 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
-tasks:
- - command: sudo /bin/bash -c '/opt/openhab/start.sh'
+# tasks:
+# - command: sudo /bin/bash -c '/opt/openhab/start.sh'
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
