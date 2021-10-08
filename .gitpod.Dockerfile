@@ -13,5 +13,3 @@ RUN wget -O openhab-download.zip https://openhab.jfrog.io/artifactory/libs-relea
     sudo unzip openhab-download.zip -d /opt/openhab && \
     rm openhab-download.zip && \
     sudo chown -hR gitpod:gitpod /opt/openhab
-    # sudo su -s /bin/bash -c '/opt/openhab/start.sh' openhab
-
