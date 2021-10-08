@@ -11,3 +11,5 @@ ports:
     onOpen: open-preview
   - port: 8081-50000
     onOpen: ignore
+  - port: 5007
+    onOpen: ignore
