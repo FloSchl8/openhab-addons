@@ -3,7 +3,7 @@ image:
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
- - command: echo: hello
+ - command: echo hello
  - command: sudo su -s /bin/bash -c '/opt/openhab/start.sh' openhab
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
